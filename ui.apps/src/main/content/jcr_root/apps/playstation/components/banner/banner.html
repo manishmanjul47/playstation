@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.banner'}"/>
+</sly>
+
+<section class="section-1">
+    <div class="banner">
+        <h1 class="banner-heading">${properties.heading}</h1>
+        <div class="banner-paragraph">
+        <sly>${properties.description @ context ='html'}</sly>
+        </div>
+        <button class="blue-btn">${properties.btntext}</button>
+    </div>
+</section>
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.banner'}"/>
+</sly>

@@ -1,0 +1,29 @@
+/* Section 5 */
+.section-5 {
+  width: 100%;
+}
+
+.section-5-top {
+  width: 100%;
+  background-color: #f3f7fa;
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.section-5-top-heading {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.blue-btn {
+  width: 35rem;
+  height: 5rem;
+  background-color: #036bb1;
+  color: #fff;
+  border-radius: 3rem;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}

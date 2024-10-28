@@ -1,0 +1,12 @@
+<!--/* Get all child resources */-->
+<div data-sly-list.multifield="${resource.getChildren}">
+
+    <div data-sly-test="${multifield.name == 'multifield'}">
+        <p>Multifield</p>
+
+        <ul data-sly-list.multilist="${multifield.getChildren}">
+            <li>Image Path: ${multilist.image}</li>
+            <li>Text:${multilist.text}</li><br>
+        </ul>
+    </div>
+</div>

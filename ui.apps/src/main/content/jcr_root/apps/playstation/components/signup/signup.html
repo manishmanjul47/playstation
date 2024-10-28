@@ -1,0 +1,15 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.signup'}"/>
+</sly>
+
+
+<section class="section-5">
+    <div class="section-5-top">
+        <h2 class="section-5-top-heading">${properties.heading}</h2>
+        <button class="blue-btn signup">${properties.btntext}</button>
+    </div>
+</section>
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.signup'}"/>
+</sly>

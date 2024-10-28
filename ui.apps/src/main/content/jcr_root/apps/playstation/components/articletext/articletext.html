@@ -1,0 +1,20 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.articletext'}"/>
+</sly>
+
+<!-- Section 3 -->
+<section class="section-3">
+    <h1 class="section-3-heading">${properties.heading}</h1>
+    <sly data-sly-list.multifield="${resource.getChildren}">
+        <div class="features" data-sly-list.multilist="${multifield.getChildren}">
+            <div class="feature">
+                <h3 class="feature-heading">${multilist.text}</h3>
+                <sly class="feature-paragraph">${multilist.description @ context = 'html'}</sly>
+            </div>
+        </div>
+    </sly>
+</section>
+<!-- End of Section 3 -->
+ <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.articletext'}"/>
+</sly>

@@ -1,0 +1,18 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.contentTeaserSecondary'}"/>
+</sly>
+
+<section class="section-2">
+    <h1 class="section-2-heading">${properties.heading}</h1>
+    <div class="services" data-sly-list.multifield="${resource.getChildren}">
+        <div class="service" data-sly-list.multilist="${multifield.getChildren}">
+            <i class="fas fa-user-tie"></i>
+            <h3 class="service-heading">${multilist.heading}</h3>
+            <p class="service-paragraph">${multilist.description @ context = 'html'}</p>
+            <button class="service-btn">${multilist.btntext}</button>
+        </div>
+    </div>
+</section>
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.contentTeaserSecondary'}"/>
+</sly>

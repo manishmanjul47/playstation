@@ -1,0 +1,11 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.footer'}"/>
+</sly>
+
+<div class="footer-bottom" data-sly-use.footer="com.play.core.models.FooterModel">
+    <p class="copyright">${footer.footerText @ context='html'}</p>
+</div>
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.footer'}"/>
+</sly>

@@ -1,0 +1,26 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='playstation.mediatext'}"/>
+</sly>
+
+<!-- Section 4 -->
+<section class="section-4" data-sly-use.mediaText="com.play.core.models.MediaTextModel">
+    <h1 class="section-4-heading">${mediaText.heading}</h1>
+    <div class="section-4-content">
+        <div class="section-4-img-wrapper">
+            <img src="${mediaText.image}">
+        </div>
+        <sly data-sly-list.step="${model.steps}">
+            <ul class="section-4-list" data-sly-list.multilist="${multifield.getChildren}">
+                <li class="section-4-list-item">
+                    <span class="number">${step.numbertext}</span>
+                    <span>${step.text}</span>
+                </li>
+            </ul>
+        </sly>
+    </div>
+</section>
+<!-- End of Section 4 -->
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.js @ categories='playstation.mediatext'}"/>
+</sly>
